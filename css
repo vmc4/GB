@@ -1,0 +1,786 @@
+/*LAYOUT*/
+
+body {
+height: 100%;
+background-image: url('test-back.jpg');
+xbackground-color: #474b4c;
+background-attachment: fixed;
+background-repeat: repeat;
+}
+
+div.Outer {
+background-color: #043a6b; 180772; 
+xheight: 100%;
+width: 1024px;
+margin-left: auto;
+margin-right: auto;
+padding-top: 1px;
+padding-bottom: 30px;
+border-radius:15px;
+display: table;
+}
+
+div.Header {
+margin: 0px 15px 0px 15px;
+width: 97%;
+height: 200px;
+background-color: #f9fcff; 474b4c
+margin-left: auto;
+margin-right: auto;
+border-radius: 15px;
+}
+
+div.nav {
+font-family: Herculanum;
+font-size: 18pt;
+text-align: center;
+width: 97%;
+color: LightGrey;
+margin: auto;
+height: 20px;
+vertical-align: middle;
+padding-bottom: 5px;
+}
+
+
+div.Body {
+xmargin: 0px 30px 30px 30px;
+margin-left: auto;
+margin-right: auto;
+background-color: #474b4c;
+width: 97%;
+height: 97%;
+padding-top: 0px;
+padding-bottom: 0px;
+display:table;
+margin-bottom:20px;
+border-radius: 15px;
+}
+
+div.Banner {
+width: 500px;
+height: 60px;
+border:1px lightgrey groove;
+margin:5px 5px 10px 5px;
+float: left;
+}
+
+div.Search {
+width: 455px; 
+height: 52px;
+float: left;
+xborder: 5px #180772 solid;
+margin: 20px 0px -5px 10px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+background-color: #043a6b;
+}
+
+div.Column-one {
+height: 100%; 
+width: 17%; 
+xborder: 1px lightgrey groove;
+float: left;
+clear: left;
+}
+
+div.Column-two {
+height: 100%; 
+width: 83%; 
+xborder: 1px lightgrey groove;
+float: right;
+}
+
+/*Column-one*/
+
+table#mal {
+position: absolute;
+xfloat: left; 
+margin:-5px 0px 20px 5px; 
+height: 350px; 
+width: 160px;
+xborder: 3px groove #01199a;
+}
+
+div.side-Banner {
+height: 600px; 
+width: 160px;
+border: 1px lightgrey groove;
+xposition: absolute;
+margin: 360px 0px 0px 5px; 
+xfloat: left;
+border-radius: 15px;
+}
+
+div.Title {
+width: 100%;
+height: 40px;
+border-top:1px lightgrey groove;
+border-bottom:1px lightgrey groove;
+}
+
+div.Content {
+width:100%; 
+height:100%;
+background-color:#353636; 
+border-top-left-radius: 15px; 
+border-bottom-left-radius: 15px;
+xpadding:40px
+display:table;
+padding:20px 0px;
+margin-right: 100px;
+}
+
+div.Content-border {
+height:950px; 
+width:804px; 
+margin-left:5px; 
+margin-top:-5px;
+border-top-left-radius:15px; 
+border-bottom-left-radius:15px;
+background-color:#043a6b; 
+padding: 15px 0px 15px 15px; 
+color:LightGrey; 
+xfloat:left;
+display: table;
+xborder:1px lightgrey groove;
+}
+
+table#mal {
+position: absolute;
+xfloat: left; 
+margin:-5px 0px 20px 5px; 
+height: 350px; 
+width: 160px;
+xborder: 3px groove #01199a;
+}
+
+div.Quick-search {
+width: 150px;
+height: 190px;
+border-radius: 15px;
+border: 1px lightgrey groove;
+position: absolute;
+margin: 400px 0px 0 10px;
+background-color: #353636;
+}
+
+div.Sitemap-border {
+width: 80%;
+height: 175px;
+background-color: #043a6b;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+float: left;
+margin-left: 10%;
+margin-top: 20px;	
+padding:15px 15px 0 15px;
+}
+
+div.Sitemap {
+width:100%;
+height:100%;
+background-color: #353636;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+
+table.Sitemap {
+width:70%;
+height:70%;
+color: lightgrey;
+border:1px lightgrey groove;
+text-align: left; 
+margin-left: 20px;
+float:left;
+}
+
+
+div.Home-one {
+width: 275px; 
+height: 275px; 
+border: 3px lightgrey groove;
+margin: 20px 20px 20px 40px ;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size: 18pt;
+background-color: #180773;
+}
+
+div.Home-two {
+width: 275px; 
+height: 275px; 
+border: 3px lightgrey groove;
+margin: 20px 20px 20px 20px ;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size: 18pt;
+background-color: #180773
+}
+
+div.Home-three {
+width: 275px; 
+height: 275px; 
+border: 3px lightgrey groove;
+margin: 20px 20px 20px 20px ;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size: 18pt;
+background-color: #180773;
+}
+
+div.Mini-post1 {
+height: 65px;
+width: 250px;
+border: 3px LightGrey groove;
+margin:7px;
+margin-left: auto;
+margin-right: auto;
+background-color: #474b4c;
+}
+
+div.Mini-post2 {
+height: 60px;
+width: 250px;
+border: 3px LightGrey groove;
+margin: 10px 7px 7px 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: #474b4c;
+}
+
+div.Mini-post3 {
+height: 60px;
+width: 250px;
+border: 3px LightGrey groove;
+margin: 10px 7px 7px 10px;
+margin-left: auto;
+margin-right: auto;
+background-color: #474b4c;
+}
+
+a {
+color: LightGrey;
+}
+
+th {
+height: 20px;
+font-size: 14pt;
+padding-bottom:-10px;
+}
+
+td {
+xborder: 2px LightGrey groove;
+text-align: left;
+xbackground-color: #353636;
+color: LightGrey;
+font-size: 12pt;
+height: 15px;
+}
+
+td.Head {
+font-size:14px;
+}
+
+td.link {
+border: 2px LightGrey groove;
+text-align: center;
+background-color: #353636;
+color: LightGrey;
+font-size: 14pt;
+cursor: crosshair;
+border-radius: 15px;
+}
+
+td.link:hover {
+background-color: LightGrey;
+border: 2px #353636 groove;
+color: #353636;
+font-size: 14pt;
+cursor: crosshair;
+text-align: center;
+}
+
+/*FIND-A-GAME*/
+
+div.Search-bar {
+background-color: #353636;
+width: 100%;
+height: 60px;
+xmargin: 50px 20px 5px 0px;
+xborder: 1px lightgrey groove;
+}
+
+div.Long-list {
+xfloat: left;
+border: 1px LightGrey groove;
+width: 100%;
+xheight: 850px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*System Featured*/
+
+div.Featured {
+border-bottom: 2px #353636 groove;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 93%;
+height: 250px;
+}
+
+div.Featured-title {
+width:400px;
+height:50px;
+border: 1px LightGrey groove;
+margin:5px;
+float:left;
+}
+
+/*Search Listings*/
+
+div.Listing {
+border-bottom: 2px #353636 groove;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+width: 93%;
+height: 150px;
+}
+
+div.Search-thumbnail {
+width: 100px;
+height: 130px;
+border: 1px LightGrey groove;
+margin: 5px;
+float: left;
+margin-right: 5px;
+}
+
+div.Listing-title {
+width:400px;
+height:50px;
+border: 1px LightGrey groove;
+margin:5px;
+float:left;
+}
+
+div.Time-remaining {
+width: 75px;
+height: 50px;
+border: 1px lightgrey groove;
+float: right;
+margin: 5px 10px 10px 60px;
+}
+
+
+div.Bids {
+float: left;
+width: 70px;
+height: 20px;
+border: 1px lightgrey groove;
+margin: 5px;
+clear: right;
+}
+
+div.Make-offer {
+float: right;
+}
+
+p.Title {
+font-family:Herculanum;
+text-align:center;
+font-size:30pt;
+color:#6C8CD5;
+text-decoration:underline;
+margin: 20px;
+}
+
+div.Login {
+text-align: right;
+vertical-align: top; 
+color: #353636;
+margin:auto;
+width: 97%;
+height: 20px;
+xborder:1px lightgrey groove;
+}
+
+
+div.Sign-in {
+width: 400px;
+height: 250px;
+margin: 50px 75px 30px 50px;
+float: left;
+background-color: #474b4c;
+}
+
+div.Sign-up {
+width: 400px;
+height: 250px;
+margin: 30px 75px 30px 50px;
+float: right;
+background-color: #474b4c;
+}
+
+
+
+/*Account*/
+
+div.Profile-pic {
+height: 250px;
+width: 200px;
+border: 1px white groove;
+text-align: center;
+margin: 40px;
+float: left;
+}
+
+div.Account-title {
+margin-left: 0px;
+margin-top: 40px;
+margin-right: 0px;
+width: 300px;
+height: 40px;
+border: 1px white groove;
+float: left;
+clear: right;
+}
+
+div.Member-since {
+height: 40px;
+width: 200px;
+float: left; 
+border: 1px lightgrey groove;
+margin-top: 30px;
+margin-right:200px
+}
+
+div.Trade-activity {
+float: left;
+height: 25px;
+width: 175px;
+border: 1px lightgrey groove;
+margin-top: 20px;
+margin-left: 0px;
+margin-right: 100px;
+clear: right;
+}
+
+div.Game-collection {
+width: 90%;
+height: 400px;
+display: table;
+border: 1px lightgrey groove;
+margin: auto;
+}
+
+/*Listing Page*/
+
+div#otherSystem {
+visibility: hidden;
+}
+
+div.Game-pic {
+height: 305px;
+width: 210px;
+border: 1px white groove;
+text-align: center;
+margin: 40px;
+float: left;
+}
+
+div.Game-title {
+margin-left: 0px;
+margin-top: 40px;
+margin-right: 0px;
+width: 300px;
+height: 40px;
+border: 1px white groove;
+float: left;
+clear: right;
+}
+
+div.Game-System {
+height: 40px;
+width: 200px;
+float: left; 
+border: 1px lightgrey groove;
+margin-top: 5px;
+margin-right:200px
+}
+
+div.Make-offer {
+float:right;
+height: 105px;
+width: 200px;
+border: 1px lightgrey groove;
+xmargin-top:-42px;
+margin-right:40px;
+}
+
+div.Time-remaining {
+float: left;
+height: 35px;
+width: 175px;
+border: 1px lightgrey groove;
+margin-top: -35px;
+margin-left: 5px;
+margin-right: 100px;
+clear: right;
+}
+
+table.Games-offered {
+float:left;
+height:75px;
+width:250px;
+border:1px lightgrey groove;
+margin:5px 0px 0 0;
+visibility: hidden;
+}
+
+div.xBid-button {
+float: left;
+height:80px;
+width:175px;
+border:1px lightgrey groove;
+border-radius:15px;
+margin-right:px;
+margin-top:35px;
+}
+
+/*MAL-Confirm*/
+
+
+div#Image-preview {
+height: 331px;
+width: 210px;
+border: 1px white groove;
+text-align: center;
+margin: 40px;
+float: left;
+}
+
+div#Title-confirm {
+margin-left: 0px;
+margin-top: 40px;
+margin-right: 0px;
+width: 400px;
+height: 30px;
+xborder: 1px white groove;
+float: left;
+clear: right;
+}
+
+div#System-confirm {
+height: 30px;
+width: 400px;
+float: left; 
+xborder: 1px lightgrey groove;
+margin-top: 5px;
+}
+
+
+div#Genre-confirm {
+float: left;
+height: 30px;
+width: 400px;
+xborder: 1px lightgrey groove;
+margin-top: 5px;
+clear: right;
+}
+
+table#Mw-confirm {
+float:left;
+height:100px;
+width:400px;
+xborder:1px lightgrey groove;
+margin:5px 0px 0 0;
+}
+
+td#Mw-game {
+width: 70%;
+text-align:left;
+}
+
+td#Mw-system {
+width: 30%;
+text-align:center;
+}
+
+div#Accepted-confirm {
+float: left;
+height: 60px;
+width: 400px;
+xborder: 1px lightgrey groove;
+margin-top: 5px;
+margin-right: 100px;
+clear: right;
+}
+
+div#Min-dollar {
+height: 30px;
+width: 400px;
+float: left; 
+xborder: 1px lightgrey groove;
+margin-top: 5px;
+}
+
+/*Search*/
+
+div.Search-bar2 {
+background-color: #353636;
+float: left;
+width: 485px;
+height: 50px;
+margin: 5px 20px 10px 0px;
+border: 1px lightgrey groove;
+}
+
+div.Gamesearch {
+background-color: #353636;
+float: left;
+width: 100px;
+height: 50px;
+margin: 50px 0px 5px 65px;
+border: 1px lightgrey groove;
+color: LightGrey;
+font-size: 16pt;
+text-align: center;
+}
+
+div.Wantedsearch {
+background-color: #353636;
+float: left;
+width: 100px;
+height: 50px;
+margin: 50px 0px 5px 65px;
+border: 1px lightgrey groove;
+color: LightGrey;
+font-size: 16pt;
+text-align: center;
+}
+
+div.Search-button {
+height: 10px;
+width: 90px;
+border: 1px lightgrey groove;
+float: left;
+margin-top: 5px;
+margin-left: 500px;
+font-size: 22pt;
+}
+
+div.Search-results {
+float: left;
+width: 450px;
+height: 200px;
+border: 3px #2E16B1 groove;
+border-bottom: none;
+margin-left: 100px;
+margin-top: 30px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+margin-bottom: -3px;
+}
+
+div.Block-results {
+width: 100%;
+display: table;
+margin-right: auto;
+margin-right: auto;
+border: 3px #2E16B1 groove;
+xbackground-color: #2E16B1;
+border-radius: 15px;
+}
+
+
+table.Square-one {
+width: 245px;
+height: 295px;
+border: 1px lightgrey groove;
+margin: 30px 10px 20px 1px;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size:18pt;
+}
+
+table.Square-two {
+width: 245px;
+height: 295px;
+border: 1px lightgrey groove;
+margin: 30px 10px 20px 10px;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size:18pt;
+}
+
+table.Square-three {
+width: 245px;
+height: 295px;
+border: 1px lightgrey groove;
+margin: 30px 1px 20px 10px;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size:18pt;
+}
+
+tr.Mini-list {
+height: 33%;
+border-bottom: 1px lightgrey groove;
+}
+
+#Square-four {
+width: 275px;
+height: 275px;
+border: 3px lightgrey groove;
+margin: 20px 20px 20px 40px;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size:18pt;
+}
+
+#Square-five {
+width: 275px;
+height: 275px;
+border: 3px lightgrey groove;
+margin: 20px 20px 20px 20px;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size:18pt;
+}	
+
+#Square-six {
+width: 275px;
+height: 275px;
+border: 3px lightgrey groove;
+margin: 20px 20px 20px 20px;
+float: left;
+text-align: center;
+text-decoration: underline;
+font-family: Herculanum;
+font-size:18pt;
+}
+
+reviews/user reviews featured
+game bizarre guarantee- guaranteed to come, guaranteed to run
