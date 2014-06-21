@@ -1,0 +1,60 @@
+	<?php
+							
+    							require_once('connection.php');
+   							
+    							if (!$con)
+    								{
+    								die ('Could not connect: ' . mysqli_error());
+    								}
+	
+                            $firstName=$_COOKIE['name'];
+                            $lastName=$_SESSION['firstName'];
+                            $userEmail=$_GET['userEmail'];
+                            $username=$_GET['userUsername'];
+                            $userLog=$_GET['userLog'];
+                            $dateAdded="NOW()";
+                            
+                            
+    
+							$insert=mysqli_query($con, "INSERT INTO Temp_Account(Account_Id, First_Name, Last_Name,
+                                                    Username, User_Log, User_Email)
+							VALUES(DEFAULT, '$firstName','$lastName', '$username', '$userLog', '$userEmail')");
+									
+								
+                                    if ($insert)
+    								{
+									echo "Your account has been created! <br>
+											You will recieve a confirmation email shortly.";
+									}
+								elseif (!$insert)
+									{
+									echo mysqli_error($con);
+									die ('unable to insert' );
+									}
+                                    
+                            $msg = "Name: ".$_GET['firstName']." ".$_GET['lastName']."\n";
+                            $msg .= "Email: ".$_GET['username']."\n";
+                            $msg .= "Please confirm your email address so that you will be able to 
+                            get the most bang for your gaming buck. If you did not Sign up for GB, 
+                            you should so ;)";
+                            
+                                     
+                            $recipient = $_GET['userEmail'];
+                            $subject = "Confirm Email";
+                            $headers  = 'MIME-Version: 1.0' . "\r\n";
+                            $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                            $headers = "From: Game Bizarre <admin@gamebizarre.com> \n";
+                            
+                            $send = mail($recipient, $subject, $msg, $headers);
+                            
+                            if(!mail) {
+                                echo mysqli_error($send);
+                            }
+                            else {
+                            
+                            }
+                                     
+                            
+								
+								mysqli_close($con);
+								?>
