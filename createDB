@@ -1,6 +1,6 @@
 <?php 
 
-$con=mysqli_connect("example.com","peter","abc123");
+$con=mysqli_connect(?,?,?);
 
 if (mysqli_connect_errno()) {
   echo "connection failed" . mysqli_connect_error();
@@ -28,5 +28,36 @@ Date_Added BIGINT(20), Listing_No INT(11),Views SMALLINT(6),Account_Id SMALLINT(
 Genre VARCHAR(20),Accepting_Sys VARCHAR(25), Accepting_Sys VARCHAR(25),Min_Dollar TINYINT(4),Cov_Img VARCHAR(75),Disc_Cond VARCHAR(75)
 )";
 
+$createTable4= "CREATE TABLE Offers(
+Date_Added BIGINT(20),Offer_No,Listing_No SMALLINT(6),Lister INT(11),Offeror INT(11), Game_Name VARCHAR(75), System VARCHAR(25),
+Genre VARCHAR(20),Cov_Img VARCHAR(75),Disc_Cond VARCHAR(75),Dollar_Offer TINYINT(4)
+)";
 
+if (mysqli_query($con,$createTable1)) {
+echo "success";
+}
+else {
+echo mysqli_error($con);
+}
+
+if (mysqli_query($con,$createTable2)) {
+echo "success";
+}
+else {
+echo mysqli_error($con);
+}
+
+if (mysqli_query($con,$createTable3)) {
+echo "success";
+}
+else {
+echo mysqli_error($con);
+}
+
+if (mysqli_query($con,$createTable4)) {
+echo "success";
+}
+else {
+echo mysqli_error($con);
+}
 ?>
