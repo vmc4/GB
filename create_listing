@@ -1,0 +1,46 @@
+<?php
+							require_once('connection.php');
+    							
+    						$gameName=$_GET['gameConfirm'];
+								$systemName=$_GET['systemConfirm'];
+								$gameGenre=$_GET['genreConfirm'];
+								$acceptOne=$_GET['confirmOne'];
+								$acceptTwo=$_GET['confirmTwo'];
+								$minDollar=$_GET['dollarConfirm'];
+    						$discImage=$_GET['coverConfirm'];
+    						$discCondition=$_GET['discConfirm'];
+    						$timeAdded = "UNIX_TIMESTAMP()";		
+    						$AccountId = $_GET['lister'];			
+   						
+	
+							$insert = mysqli_query($con, "INSERT INTO Listings(Date_Added, Listing_No, Account_Id, Game_Name, System,
+									 						Genre, Accepting_Sys, Accepting_Sys2, Min_Dollar, Cov_Img, Disc_COnd)
+							VALUES ($timeAdded, DEFAULT, '$accountId', '$gameName','$systemName', '$gameGenre', '$acceptOne', '$acceptTwo', '$minDollar', '$discImage', '$discCondition')");
+									
+								if ($insert)
+									{
+									echo "Your listing has been created! <br>
+											You will recieve a confirmation email shortly.";
+									}
+								elseif (!$insert)
+									{
+									echo mysqli_error($con);
+									die ('unable to insert' );
+									}
+                                    
+                            $msg = "Username \n";
+                            $msg .= "Your listing is being created. Soon you will begin receiving offers from other members for your game.
+                            Listing Details \n";
+                            $msg .= "Game Name: $gameName \n";
+                            $msg .= "System: $systemName \n";
+                            $msg .= "Genre: $gameGenre \n";
+                                     
+                            $recipient = $_GET['userEmail'];
+                            $subject = "Account Created";
+                            $mailheaders = "From: Game Bizarre <admin@gamebizarre.com> \n";
+                            
+                            $send = mail($recipient, $subject, $msg, $mailheaders);
+                            
+								
+								mysqli_close($con);
+								?>
