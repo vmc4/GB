@@ -4,11 +4,11 @@ include('UserRepository.php');
 
 class LoginGuard
 {
-	public static StopForCredentialCheck($userName,$password)
+	public static function StopForCredentialCheck($userName,$password)
 	{
-		if(UserRepository::GetUsersByName($userName)->Password()==$password)
+		if((new UserRepository())->GetUsersByName($userName)->Password()==$password)
 		{
-			$_SESSION["User"] = UserRepository::GetUsersByName($userName);
+			$_SESSION["User"] = (new UserRepository())->GetUsersByName($userName);
 		}
 	}
 }

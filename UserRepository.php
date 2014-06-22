@@ -4,14 +4,27 @@ include('User.php');
 
 class UserRepository
 {
-	private static $users = new Array(new User('bob','bobspass'),new User('bill','billspass'),new User('phil','philspass'));
-	public static function GetUsers()
+	private $users;
+	private $u1;
+	private $u2;
+	private $u3;
+	
+	function __construct()
+	{
+	 $this->u1 = new User('bob','bobspass');
+	 $this->u2 =new User('bill','billspass');
+	 $this->u3 =new User('phil','philspass');
+	$this->users = Array( 
+	$this->u1, $this->u2, $this->u3
+	);
+	}
+	public function GetUsers()
 	{
 		return $users;
 	}
-	public static function GetUsersByName($name)
+	public function GetUsersByName($name)
 	{
-		foreach($users as $user)
+		foreach($this->users as $user)
 		{
 			if($user->UserName() == $name)
 				return $user;
