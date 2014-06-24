@@ -6,7 +6,8 @@ class LoginGuard
 {
 	public static function StopForCredentialCheck($userName,$password)
 	{
-		if((new UserRepository())->GetUsersByName($userName)->Password()==$password)
+		var userRepo = new UserRepository();
+		if(userRepo->GetUsersByName($userName)->Password()==$password)
 		{
 			$_SESSION["User"] = (new UserRepository())->GetUsersByName($userName);
 		}
