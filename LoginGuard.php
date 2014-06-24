@@ -8,7 +8,7 @@ class LoginGuard
 	{
 		$userRepo = new UserRepository();
 		$user = $userRepo->GetUsersByName($userName);
-		if($user->Password()==$password)
+		if(((User)$user)->Password()==$password)
 		{
 			$_SESSION["User"] = $user;
 		}
