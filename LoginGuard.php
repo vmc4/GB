@@ -1,5 +1,5 @@
 <?php
-
+include('User.php');
 include('UserRepository.php');
 
 class LoginGuard
