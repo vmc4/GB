@@ -4,11 +4,11 @@ include('User.php');
 
 class UserRepository
 {
-	private $users;
+    private $users;
 	private $u1;
 	private $u2;
 	private $u3;
-	
+
 	function __construct()
 	{
 	 $this->u1 = new User('bob','bobspass');

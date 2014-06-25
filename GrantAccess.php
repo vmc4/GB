@@ -2,7 +2,7 @@
 if(isset($_SESSION["User"]))
 if($_SESSION["User"]->IsActive())
 {
-header('Location: accountpage');
+header('Location: GB-account.php');
 
 }
 ?>

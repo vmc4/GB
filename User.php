@@ -4,7 +4,7 @@ private $UserName;
 private $Password;
 function __construct($userName, $password)
 {
-	$this->UserName = $userName;
+    $this->UserName = $userName;
 	$this->Password = $password;
 }
 function UserName()

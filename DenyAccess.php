@@ -1,6 +1,6 @@
 <?php
 if(!isset($_SESSION["User"]))
-header('Location: index.php');
+header('Location: GB-Master.php');
 if(!$_SESSION["User"]->IsActive())
-header('Location: index.php');
+header('Location: GB-Master.php');
 ?>
